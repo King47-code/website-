@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Contact Us</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" type="text/css" href="style_contact.css">
+    <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="about.html">About Us</a></li>
+          <li><a href="departments.html">Departments</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="admission.html">Admission</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+</head>
+<body>
+	<header>
+		<h1>Contact Us</h1>
+	</header>
+
+	<main>
+		<section>
+			<h2>Contact Form</h2>
+			<form>
+				<label for="name">Name:</label>
+				<input type="text" id="name" name="name">
+
+				<label for="email">Email:</label>
+				<input type="email" id="email" name="email">
+
+				<label for="subject">Subject:</label>
+				<input type="text" id="subject" name="subject">
+
+				<label for="message">Message:</label>
+				<textarea id="message" name="message"></textarea>
+
+				<input type="submit" value="Send">
+			</form>
+		</section>
+
+		<section>
+			<h2>Company Information</h2>
+			<ul>
+				<li>AfterSchool Coding</li>
+				<li>Late News, Teiman</li>
+				<li>P.O.Box AT 814, Achimota</li>
+				<li>Phone: +233549615092</li>
+				<li>Email: codingforafrickid.epizy.com/</li>
+			</ul>
+		</section>
+		<div class="banner">
+			<h1>Welcome to AfterSchool Coding!</h1>
+			<p>Learn to code with us and unlock your potential.</p>
+		  </div>
+		  
+		<section>
+			<h2>Social Media Links</h2>
+			<ul>
+				<li><a href="#">Facebook</a></li>
+				<li><a href="#">Twitter</a></li>
+				<li><a href="#">Instagram</a></li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Google Maps</h2>
+			<div id="map"></div>
+			<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB75wVP0f2fazuc2iSBEL1LYvmZ4bylWzQ&callback=initMap"></script>
+			<script>
+				function initMap() {
+					var location = {lat: 37.7749, lng: -122.4194};
+					var map = new google.maps.Map(document.getElementById("map"), {
+						zoom: 8,
+						center: location
+					});
+					var marker = new google.maps.Marker({
+						position: location,
+						map: map
+					});
+				}
+			</script>
+		</section>
+
+		<section>
+			<h2>Hours of Operation</h2>
+			<p>Monday - Friday: 9:00am - 5:00pm EST</p>
+		</section>
+
+		<section>
+			<h2>FAQs</h2>
+			<ul>
+				<li>Question 1: Answer 1</li>
+				<li>Question 2: Answer 2</li>
+				<li>Question 3: Answer 3</li>
+			</ul>
+		</section>
+
+		<section>
+			<h2>Call-to-Action</h2>
+			<p>Ready to get in touch? Fill out the contact form above or give us a call at +233549615092 to schedule a consultation.</p>
+		</section>
+	</main>
+
+	<footer>
+        <p>&copy; 2023 AfterSchool Coding. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+    
